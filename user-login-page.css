@@ -10,7 +10,8 @@ body{
     background-repeat:round;
 }
 a{
-    text-decoration: none
+    text-decoration: none;
+    color:rgb(68, 0, 255)
 }
 .promotion{
     width: 25%;
@@ -22,6 +23,7 @@ a{
     letter-spacing: 2px;
     word-spacing: 4px;
     text-align: center;
+    box-shadow: 7px 12px rgba(158, 123, 123, 0.8);
 }
 
 .company-name{
@@ -43,26 +45,28 @@ a{
     margin-top: 60px;
     width: 500px;
     height: 600px;
-    background-color: #f7f7f7;
+    background-color: #ffa600;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px 10px rgb(0, 0, 0, 0.1 );    
+    box-shadow: 2px 2px 10px 5px  rgba(255, 255, 255, 0.555); 
 }
 .container{
-   
     margin-bottom: 20px;
 }
 #header{
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     margin-left: 10px;
-    color: #353535;
+    color: #fdfdfd;
     font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
 }
-.btx{
+.companyIcon{
     color: #019709;
     margin-left: 60px;
     margin-top: 10px;
-    opacity: .5;
+    
 }
 
 .btn-close{
@@ -86,17 +90,25 @@ a{
     height: 50px;
     padding: 5px;
 }
-#username{
+#firstName{
     height: 30px;
     width: 200px;
     font-size: 18px;
     padding: 4px;
     color: #353535;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #fffdfd;
     margin-top: 10px;
+    text-transform: capitalize;
 }
-#usersurname{
+.errors{
+    color: red;
+}
+.user-errors{
+    text-align: center;
+}
+
+#lastName{
     margin-top: 10px;
     margin-left: 10px;
     height: 30px;
@@ -104,8 +116,9 @@ a{
     font-size: 18px;
     padding: 4px;
     color: #353535;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #fffdfd;
+    text-transform: capitalize;
 }
 
 #email, #phone, #password, #repassword{
@@ -114,7 +127,7 @@ a{
     font-size: 18px;
     padding: 4px;
     color: #353535;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #fffdfd;
 }
 
@@ -149,11 +162,13 @@ a{
     padding: 5px;
     width: 200px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
-    margin: 20px 150px;
+    margin-left:  150px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     border: none;
-    box-shadow: 4px 8px  rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px 2px  rgba(128, 204, 162, 0.7);
     letter-spacing: 1px;
     cursor: pointer;
 }
